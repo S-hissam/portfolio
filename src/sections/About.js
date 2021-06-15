@@ -1,61 +1,63 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
-import SectionHeader from '../components/section-header';
-import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
-import Support from 'assets/key-feature/support.svg';
+/**
+ * @format
+ * @jsx jsx
+ */
+
+import { jsx } from "theme-ui";
+import { Container, Grid } from "theme-ui";
+import SectionHeader from "../components/section-header";
+import FeatureCardColumn from "components/feature-card-column.js";
+import Performance from "assets/key-feature/performance.svg";
+import Partnership from "assets/key-feature/partnership.svg";
+import Subscription from "assets/key-feature/subscription.svg";
+import Support from "assets/key-feature/support.svg";
 
 const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fahigkeiten',
-    title: 'Fähigkeiten',
+    altText: "Fahigkeiten",
+    title: "Fähigkeiten",
     text:
-      'Lernbereitschaft, Kreativ, Effektiv, Flexibel, Kompromissbereitschaft, Aufgeschlossen, Internationalität, Teamplayer',
+      "Lernbereitschaft | Kreativität | Effektivtät | Flexibeltät | Kompromissbereitschaft | Teamplayer",
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Technische Kenntnisse',
+    altText: "Partnership deal",
+    title: "Technische Kenntnisse",
     text:
-      'HTML, CSS, JavaScript, CMS (Content-Management-System), Git, Canva, Figma, Chrome developer tools, Hosting und Domainverwaltung, Ms Office (Word, Powerpoint).',
+      "HTML | CSS | JavaScript | CMS (Content-Management-System) | Git | Canva | Figma | Chrome developer tools | Hosting und Domainverwaltung | Ms Office (Word, Powerpoint).",
   },
   {
     id: 3,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Sprachen',
+    altText: "Customer Support",
+    title: "Sprachen",
     text:
-      'Deutsch (fließend), Englisch (fließend), Türkisch (fließend), Persich, Hindi (Fließend) (fließend), Usbekisch (Muttersprache)',
+      "Deutsch (fließend)| Englisch (fließend) | Türkisch (fließend) | Persich (Fließend)| Hindi (Fließend) | Usbekisch (Muttersprache)",
   },
   {
     id: 4,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Interessen',
+    altText: "Pro Subscription",
+    title: "Interessen",
     text:
-      'Künstliche Intelligenz, Neue Technologien, Wirtschaft, International Reisen.',
+      "Künstliche Intelligenz | Neue Technologien | Business | Musik | Sport und Reisen.",
   },
 ];
 
 export default function KeyFeature() {
   return (
-
-    <section sx={{variant: 'section.keyFeature'}} id='about'>
+    <section sx={{ variant: "section.keyFeature" }} id="about">
       <Container>
         <SectionHeader
           slogan='Ich bin leidenschaftlicher Webdesigner mit Schwerpunkt Digitales Marketing. "Respond to Change" ist meine Lebensphilosophie.
           '
-          title='👨🏽‍💻' />
-        <Grid
-          sx={styles.grid}
-        >
-          {data.map(item => (
+          title="👨🏽‍💻"
+        />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
             <FeatureCardColumn
               key={item.id}
               src={item.imgSrc}
@@ -64,7 +66,7 @@ export default function KeyFeature() {
               text={item.text}
             />
           ))}
-        </Grid >
+        </Grid>
       </Container>
     </section>
   );
@@ -72,23 +74,23 @@ export default function KeyFeature() {
 
 const styles = {
   grid: {
-    width: ['100%', '80%', '100%'],
-    mx: 'auto',
+    width: ["100%", "80%", "100%"],
+    mx: "auto",
     gridGap: [
-      '35px 0',
+      "35px 0",
       null,
-      '40px 40px',
-      '50px 60px',
-      '30px',
-      '50px 40px',
-      '55px 90px',
+      "40px 40px",
+      "50px 60px",
+      "30px",
+      "50px 40px",
+      "55px 90px",
     ],
     gridTemplateColumns: [
-      'repeat(1,1fr)',
+      "repeat(1,1fr)",
       null,
-      'repeat(2,1fr)',
+      "repeat(2,1fr)",
       null,
-      'repeat(4,1fr)',
+      "repeat(4,1fr)",
     ],
   },
 };

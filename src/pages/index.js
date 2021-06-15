@@ -8,9 +8,6 @@ import Banner from '../sections/banner';
 import KeyFeature from '../sections/About';
 import ServiceSection from '../sections/Erfahrung';
 import Feature from '../sections/Berufsausbildung';
-import CoreFeature from '../sections/core-feature';
-import WorkFlow from '../sections/workflow';
-import Package from '../sections/package';
 import TeamSection from '../sections/Contact';
 import TestimonialCard from '../sections/testimonial';
 
@@ -23,9 +20,11 @@ export default function IndexPage() {
         <KeyFeature />
         <ServiceSection />
         <Feature />
+
+    {/* <TestimonialCard /> */}
+
         <TeamSection />  
       </Layout>
-      layout end
     </ThemeProvider>
   );
 }

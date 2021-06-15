@@ -54,11 +54,12 @@ const styles = {
   },
 
   memberThumb: {
-    width: ['70px', '80px', '100px', null, null, '230px'],
-    height: ['70px', '80px', '100px', null, null, '230px'],
+    width: ['270px', '280px', '200px', null, null, '430px'],
+    height: ['270px', '280px', '200px', null, null, '430px'],
     flexShrink: 0,
-    border: '2px solid',
-    borderColor: 'primary',
+    border: '10px',
+    borderStyle: 'dashed double none',
+    borderColor: 'blue purple green green',
     borderRadius: '50%',
   },
   infoWrapper: {
@@ -90,13 +91,13 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'all 0.25s',
-    opacity: [1, null, 0],
+    opacity: [1, 1, 1],
     pt: 2,
     a: {
-      fontSize: [0, 1, null, 2],
-      color: ['text', null, 'primary'],
+      fontSize: [5, 5, 6, 7],
+      color: ['text', null, 'text'],
       lineHeight: '1em',
-      my: [0, null, '-2px'],
+      my: [0, null, '2px'],
       px: 1,
       transition: 'all 0.25s',
       '&:hover': {

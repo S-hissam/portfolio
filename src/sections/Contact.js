@@ -3,13 +3,20 @@
  * @jsx jsx
  */
 
-import {jsx } from "theme-ui";
-import { Box,Container, Grid } from "theme-ui";
+import { jsx } from "theme-ui";
+import { Box, Container, Grid } from "theme-ui";
 import SectionHeader from "components/section-header";
 import TeamCard from "components/team-card";
-import { FaLinkedin, FaGithub, FaWhatsapp, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+  FaFacebookF,
+   FaWhatsappSquare,
+  FaInstagram,
+  FaEnvelope,
+} from "react-icons/fa";
 import { Link } from "react-scroll";
-
 
 import Member1 from "assets/team/member-1.png";
 
@@ -29,9 +36,9 @@ const data = [
       },
       {
         id: 2,
-        name: "twitter",
-        path: "",
-        icon: <FaTwitter />,
+        name: "github",
+        path: "https://github.com/S-hissam",
+        icon: <FaGithub />,
       },
       {
         id: 3,
@@ -39,29 +46,42 @@ const data = [
         path: "https://www.instagram.com/hi_sselahatin/",
         icon: <FaInstagram />,
       },
+      {
+        id: 4,
+        name: "linkedin",
+        path: "https://www.linkedin.com/in/salahuddin-hissam-7bbb90b3/",
+        icon: <FaLinkedin />,
+      },
     ],
   },
 ];
 
 const socialm = [
   {
+    id: 1,
+    name: "facebook",
     path: "https://www.facebook.com/salahuddin.hi",
     icon: <FaFacebookF />,
   },
   {
-    path: "https://www.instagram.com/hi_sselahatin/",
-    icon: <FaInstagram />,
-  },
-  {
+    id: 2,
+    name: "github",
     path: "https://github.com/S-hissam",
     icon: <FaGithub />,
   },
   {
+    id: 3,
+    name: "instagram",
+    path: "https://www.instagram.com/hi_sselahatin/",
+    icon: <FaInstagram />,
+  },
+  {
+    id: 4,
+    name: "linkedin",
     path: "https://www.linkedin.com/in/salahuddin-hissam-7bbb90b3/",
     icon: <FaLinkedin />,
   },
 ];
-
 
 export default function TeamSection() {
   return (
@@ -83,14 +103,18 @@ export default function TeamSection() {
               social={item.socialProfile}
             ></TeamCard>
           ))}
-          <Box sx={styles.menuFooter}>
+
+          {/* <Box sx={styles.menuFooter}>
             <Box sx={styles.social}>
               {socialm.map((socialItem, i) => (
                 <Box as="span" key={i} sx={styles.social.icon}>
-                  <Link to={socialItem.path}>{socialItem.icon}</Link>
+                  <Link key={socialItem.id} to={socialItem.path}>{socialItem.icon}</Link>
                 </Box>
               ))}
             </Box>
+          </Box> */}
+          <Box sx={styles.social}>
+            <Box><FaEnvelope /> info@sa-hi.de | gokencm@gmail.com</Box>
           </Box>
         </Grid>
       </Container>
@@ -126,11 +150,8 @@ const styles = {
     mt: [0, null, -6, null, -4],
     gridGap: ["100px 100px", null, 0, null, null, "30px 35px"],
     gridTemplateColumns: [
-      "repeat(1fr)",
+      "1fr",
       null,
-      "repeat(1fr)",
-      null,
-      "repeat(1fr)",
     ],
   },
 };
