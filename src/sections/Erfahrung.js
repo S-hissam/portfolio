@@ -30,25 +30,41 @@ const data = {
     {
       id: 1,
       imgSrc: Secure,
-      altText: "GM service GmbH,",
-      title: "GM service GmbH",
-      text: " Digitales Marketing und Webdesigner,Luzern (CH), 2018 - 2020",
+      altText: "raumplus GmbH",
+      title: "raumplus GmbH",
+      text: " Web Developer, Bremen (DE), 2022 - Aktuel",
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: "Reisebüro Calisir,",
-      title: "Reisebüro Calisir",
+      altText: "Klima 4 All e.V.",
+      title: "Klima 4 All e.V.",
       text:
-        "Admin Assistant und Digital Marketing, -Praktikum, Duisburg (DE), 2017 - 2018",
+        "Web Developer, Bremen (DE), 2021 - 2022",
     },
     {
-      id: 2,
+      id: 3,
+      imgSrc: Secure,
+      altText: "GM service GmbH,",
+      title: "GM service GmbH",
+      text: " Web Developer, Luzern (CH), 2018 - 2021",
+    },
+	  {
+      id: 4,
+       imgSrc: Secure,
+      altText: "Star High Service GmbH",
+      title: "Star High Service GmbH",
+      text:
+        "Web Developer, Luzern (CH), 2017 - 2018"
+    },
+	  
+	  {
+      id: 5,
       imgSrc: Secure,
       altText: "ASAM",
       title: "ASAM Dis Ticaret Ltd.",
       text:
-        "Internationales Marketing, Studentenjob, Malatya (TR), 2015 - 2016",
+        "Web Designer, Malatya (TR), 2015 - 2017",
     },
   ],
 };
