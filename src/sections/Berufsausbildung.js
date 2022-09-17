@@ -44,6 +44,14 @@ const data = [
     title: "Audit, Controlling, Grundlagen der Dokumentation",
     text: "Türkisches Normungsinstitut, Malatya (TR), 2015",
   },
+  {
+    id: 5,
+    imgSrc: Subscription,
+    altText: "BSc. Computer Science",
+    title: "BSc. Computer Science",
+    text:
+      "Aria Universität (AF) Schwerpunkte: Advanced web Development, Database Systems, IT Security",
+  }
 ];
 
 export default function Feature() {
